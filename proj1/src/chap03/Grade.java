@@ -6,7 +6,7 @@ public class Grade {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		int jum = 0;
+		int jum = 60;
 		while(true) {
 		System.out.print("점수를 입력하세요: ");
 		jum = sc.nextInt();
