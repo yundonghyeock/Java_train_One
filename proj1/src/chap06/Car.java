@@ -2,15 +2,23 @@ package chap06;
 
 public class Car {
 	
-	String name;
-	int value;
+	String company = "현대자동차";
+	String model;
+	String color;
+	int maxSpeed;
 	
-	Car(){
-		System.out.println("나 카생성자야");
+	Car() {
 	}
-	Car(String color, int cc) {
-		name = color;
-		value = cc;
+	
+	Car(String model) {
+		this(model, "은색", 250);
 	}
-
+	Car(String model, String color) {
+		this(model, color, 250);
+	}
+	Car(String model, String color, int maxSpeed) {
+		this.model = model;
+		this.color = color;
+		this.maxSpeed = maxSpeed;
+	}
 }
