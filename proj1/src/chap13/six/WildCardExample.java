@@ -11,12 +11,12 @@ public class WildCardExample {
 	
 	public static void registersCourseStudents( Course<? extends Student> course ){
 		System.out.println(course.getName() + " 수강생: " +
-				Arrays.toString(course.getstudents()) );
+	Arrays.toString(course.getstudents()) );
 	}
 	
 	public static void registersCourseWorker( Course<? super Worker> course ){
 		System.out.println(course.getName() + " 수강생: " +
-				Arrays.toString(course.getstudents()) );
+	Arrays.toString(course.getstudents()) );
 	}
 	
 	public static void main(String[] args){
@@ -46,11 +46,11 @@ public class WildCardExample {
 
 	//registersCourseStudents(personCourse);
 	//registersCourseStudents(workerCourse);
-	//registersCourseStudents(workerCourse);
-	//registersCourseStudents(HighStudentCourse);
+	/*registersCourseStudents(workerCourse);
+	registersCourseStudents(HighStudentCourse);
 	System.out.println();
 	
-	//registersCourseWorker(personCourse);
+	registersCourseWorker(personCourse);*/
 	registersCourseWorker(workerCourse);
 	//registersCourseStudents(workerCourse);
 	//registersCourseStudents(HighStudentCourse);
